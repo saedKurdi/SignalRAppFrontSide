@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="color: springgreen" id="connectedUserInfo"></h1>
+    <h1 style="color: red" id="disconnectedUserInfo"></h1>
+    <h2 style="color: deepskyblue" id="offerValue"></h2>
+    <h2 id="offerResponseValue"></h2>
+
+    <label for="user">Username</label>
+    <input type="text" id="user" />
+    <button
+      type="submit"
+      style="cursor: pointer; padding: 0 10px"
+      id="increaseOfferBtn"
+      onclick="increaseOffer()"
+    >
+      Increase Offer
+    </button>
+    <p>Timer : <span id="timer"></span></p>
+    <h1 style="color: green" id="winnerMessage"></h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
